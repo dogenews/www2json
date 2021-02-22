@@ -1,4 +1,4 @@
-package www2json_test
+package www2json
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 )
 
 func Test_Feedvc(t *testing.T) {
-	feed, err := www2json.FeedFromLink("http://vc.ru")
+	feed, err := FeedFromLink("http://vc.ru")
 	assert.NoError(t, err)
 	fmt.Println(feed)
 }
